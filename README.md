@@ -1,4 +1,7 @@
 # BTC5-Chat Application
+<img width="200" alt="image" src="https://github.com/shunichi-baba/BTC5-solo-swift/assets/119465420/4147de5f-7726-489c-97fb-d32837de0185">
+<img width="200" alt="image" src="https://github.com/ryozo7/las-damas-primero/assets/119465420/4620d488-a8ce-4321-bf4c-6658810987c2">
+
 
 # Table of Contents
 
@@ -11,7 +14,7 @@
 # Features
 
 - Full-stack application
-- front-end swift (storyboard)
+- front-end swift (storyboard) xcode_ver15
 - back-end firebase
 - DB firebase
 
@@ -40,58 +43,38 @@
 
 # Installing & Setup
 
-### server
-
-1. change the directory to the server
-
-```zh
-cd server
-```
-
-2. install node_modules
+### ChatApp
+1.  If you have not installed cocoapods, please install it.
 
 ```zh
-npm install
+sudo gem install cocoapods
 ```
 
-3. create datebase as `github_repo_info`
-
-4. create `.env` file directly under the server directory. As environment variables, `DB_USER`,`DB_PASSWORD`,`DB_NAME` and `NODE_ENV` are needed. for development envirnment `NODE_ENV` should be `development` and for production environment `NODE_ENV` should be `production`
-
-5. set-up Database.
+2.  cocoapods setup
 
 ```zh
-npm run all-setup
+pod setup
 ```
 
-6. start the server
+3.  change the directory to the ChatApp
 
 ```zh
-npm run start
+cd ChatApp
 ```
 
-### client
-
-1.  change the directory to the client
+4.  install modules
 
 ```zh
-cd client
+pod install
 ```
 
-2.  install node_modules
+5.  xcode open
 
-```zh
-npm install
-```
+6.  xcode Simulator start
 
-3.  start the react App
-
-```zh
-npm run dev
-```
 
 # Future
 
 - Modify the style
-- Deploy to some Paas
-- Create authentification system (Sign up)
+- Deploy
+- Delete chat
